@@ -11,14 +11,14 @@
 
 .caixa img{
     border-radius: 30px;
-    width: 400px;
+    width: 450px;
     /* margin-left: 100px; */
 }
 
 .telalogin .container .caixas {
     
     display: flex;
-    margin-left: 170px;
+    margin-left: 200px;
     /* justify-content: space-evenly; */
     
 }
@@ -30,7 +30,9 @@
 }
 
 .formulario .tipo_campo {
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 78px;
     font-size: 20px;
     font-weight: 600 !important;
     
@@ -45,7 +47,9 @@
 }
 
 input {
-    margin-bottom: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: 78px;
     border: 2px solid rgba(255, 1, 1, 0.28);
     padding: 10px;
     text-align: center;
@@ -64,6 +68,7 @@ input {
     width: 120px;
     align-self: center;
     margin-top: 30px;
+    margin-left: 8px;
 }
 
 .btn:hover{
@@ -72,7 +77,9 @@ input {
 }
 
 .caixa1 h2{
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 50px;
     font-size: 30px;
     justify-content: center;
     align-items: center;
