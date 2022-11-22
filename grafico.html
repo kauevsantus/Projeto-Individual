@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz | MSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">MySwiftSpace</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="indexLogin.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="albunsLogin.html">Álbuns</a>
+                </li>
+
+                <li>
+                    <a>Olá, Swifter</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Sair</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="corpo">
+
+        <div class="topo">
+            <!-- <h1></h1> -->
+
+        </div>
+
+
+
+
+        <!-- Gráfico -->
+
+        <div id="fase12" class="container13" style="display: block;">
+            <div class="quadrado">
+                <div class="question1">
+                    <h1>Top 5 Álbuns mais populares da Taylor Swift</h1>
+
+                    <div>
+                        <canvas id="myChart" style="display: block;"></canvas>
+
+                    </div>
+
+                    <br>
+                    <button class="answer1" onclick="voltar()">Voltar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <h4>myswiftspace
+                <br>
+                <!-- <span class="version">
+                    v1.0.0
+                </span> -->
+            </h4>
+
+            <div class="redes">
+                <img src="assets/imgs/face.png" alt="">
+                <img src="assets/imgs/insta.png" alt="">
+                <img src="assets/imgs/gmail.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="js/quiz.js"></script>
+
+
+<!-- Script do Gráfico -->
+<script>
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Midnigths', 'Folklore', '1989', 'RED TV', 'Lover'],
+            datasets: [{
+                label: 'Popularidade',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(00, 59, 147, 80%)',
+                    'rgba(130, 130, 130, 100%',
+                    'rgb(160, 192, 222)',
+                    'rgba(190, 15, 24, 100%)',
+                    'rgba(254, 170, 185, 100%)',
+                ],
+                borderColor: [
+                    'rgba(00, 59, 147, 80%)',
+                    'rgba(130, 130, 130, 71%',
+                    'rgb(160, 192, 222)',
+                    'rgba(190, 15, 24, 100%)',
+                    'rgba(254, 170, 185, 100%)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // indexAxis:'y',
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>

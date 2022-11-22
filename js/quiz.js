@@ -55,8 +55,8 @@ function responder10() {
 
 
 function mostrar() {
-    fase12.style.display = "block"
-    fase11.style.display = "none"
+    window.location.href = "./grafico.html"
+
 
 }
 

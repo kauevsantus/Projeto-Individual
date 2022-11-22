@@ -261,6 +261,11 @@
     color: black;
 }
 
+.answer1:hover{
+    background-color: white;
+    color: black;
+}
+
 .grafico {
     width: 200px;
     height: 50px;
