@@ -16,10 +16,11 @@
 }
 
 .telalogin .container .caixas {
-    
+    width: 80%;
+    margin: auto;
     display: flex;
-    margin-left: 210px;
-    /* justify-content: space-evenly; */
+    margin-left: 160px;
+    justify-content: space-evenly;
     
 }
 

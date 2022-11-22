@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
     <title>Quiz | MSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -23,11 +24,11 @@
                 </li>
 
                 <li>
-                    <a href="albuns.html">Álbuns</a>
+                    <a href="albunsLogin.html">Álbuns</a>
                 </li>
 
                 <li>
-                    <a >Olá, Swifter</a>
+                    <a>Olá, Swifter</a>
                 </li>
 
                 <li>
@@ -44,7 +45,7 @@
         <div class="topo">
             <h1>Bem-Vindo(a) ao Quiz Swift</h1>
             <h1>Descubra qual álbum tem o seu estilo!</h1>
-            
+
         </div>
 
         <div id="fase0" class="container1" style="display: block;">
@@ -168,10 +169,10 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder5()">Responder</button>
                 </div>
-                
+
             </div>
         </div>
 
@@ -192,10 +193,10 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder6()">Responder</button>
                 </div>
-                
+
             </div>
         </div>
 
@@ -216,10 +217,10 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder7()">Responder</button>
                 </div>
-                
+
             </div>
         </div>
 
@@ -240,10 +241,10 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder8()">Responder</button>
                 </div>
-                
+
             </div>
         </div>
 
@@ -264,10 +265,10 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder9()">Responder</button>
                 </div>
-                
+
             </div>
         </div>
 
@@ -288,11 +289,11 @@
                     <input name="option" type="radio" id="opt4" value="opt_4">
                     <label for="opt_1">Opção 1</label>
                     <br>
-                    
+
                     <button class="answer" onclick="responder10()">Responder</button>
                     <br>
                 </div>
-                
+
             </div>
         </div>
 
@@ -301,20 +302,41 @@
                 <div class="question">
                     <h1>Parabéns</h1>
                     <p>Aqui está a sua recomendação, espero que goste!</p>
-                    
+
                     <div id="resposta"></div>
                     <br>
-                    
+
                     <button class="answer" onclick="mostrar()">Ir para os gráficos</button>
                     <br>
                     <button class="answer" onclick="voltar()">Voltar</button>
                 </div>
-                
+
             </div>
         </div>
+
+
+        <!-- Gráfico -->
+
+        <div id="fase12" class="container13" style="display: none;">
+            <div class="quadrado">
+                <div class="question1">
+                    <h1>Top 5 Álbuns mais populares da Taylor Swift</h1>
+
+                    <div id="grafico">
+                        <canvas id="myChart" ></canvas>
+                        
+                    </div>
+
+                    <br>
+                    <button class="answer1" onclick="voltar()">Voltar</button>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-    
+
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -332,8 +354,58 @@
             </div>
         </div>
     </div>
+    
+
 </body>
 
 </html>
 
 <script src="js/quiz.js"></script>
+
+
+<!-- Script do Gráfico -->
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Midnights', 'Folklore', '1989', 'RED TV', 'Lover'],
+            datasets: [{
+                label: 'Popularidade',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+
+
+  
+
+  
+
+  

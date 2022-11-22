@@ -55,11 +55,13 @@ function responder10() {
 
 
 function mostrar() {
-    
+    fase12.style.display = "block"
+    fase11.style.display = "none"
+
 }
 
 function voltar() {
-    window.location.href = "./index.html"
+    window.location.href = "./indexLogin.html"
 }
 
 
