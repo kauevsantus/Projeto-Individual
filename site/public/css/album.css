@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* HEADER */
+
+.header {
+    /* font-family: 'Comfortaa', cursive; */
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: 95px;
+    background-color: rgba(00, 59, 147, 28%);
+    border-radius: 34px;
+    /* border: solid 3px red; */
+}
+
+.header .container {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.navbar {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 300px;
+    margin-top: 30px;
+    /* border: solid 3px blue; */
+}
+
+.titulo {
+    margin-top: 30px;
+    width: fit-content;
+    font-weight: 500;
+
+}
+
+.header a {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: flex;
+}
+
+.header #b_usuario{
+    margin-left: 10px;
+}
+
+.now {
+    font-weight: 800;
+
+}
+
+/* PAINEL ERAS */
+.painel .container .eras {
+    margin-top: 10px;
+    border: solid 3px black;
+    background-image: url("../assets/imgs/desenhodaseras2.jpg");
+    background-size: cover;
+    height: 530px;
+    
+}
+
+.texto {
+    background-color: rgba(0, 0, 0, 0.426);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    color: white;
+
+}
+
+/* BANNER MIDNIGHTS */
+.banner11 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to right, rgba(00, 59, 147, 25%),rgba(85, 98, 139, 100%) );
+}
+
+.banner11 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 40px;
+}
+
+.banner11 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner11 h1 {
+    margin-top: 50px;
+}
+
+.box img {
+    margin-top: 40px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(00, 59, 147, 40%);
+}
+
+.banner11 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER EVERMORE */
+.banner9 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 15px 0;
+    color: black;
+    background-image: linear-gradient(to left, rgba(169, 81, 42, 60%), rgba(169, 81, 42, 90%));
+}
+
+.banner9 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 40px;
+}
+
+.banner9 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner9 h1 {
+    margin-top: 50px;
+}
+
+
+.box .img2 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(169, 81, 42, 880%);
+}
+
+.banner9 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER FOLKLORE */
+.banner8 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to left, rgba(130, 130, 130, 71%), rgba(130, 130, 130, 30%));
+}
+
+.banner8 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 35px;
+}
+
+.banner8 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner8 h1 {
+    margin-top: 30px;
+}
+
+.box .img3 {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(130, 130, 130, 130%);
+}
+
+.banner8 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER LOVER */
+.banner7 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to right, rgba(254, 170, 185, 100%), rgba(243, 198, 215, 70%));
+}
+
+.banner7 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 45px;
+}
+
+.banner7 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner7 h1 {
+    margin-top: 50px;
+    
+}
+
+.box .img4 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(254, 178, 215, 330%);
+}
+
+.banner7 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER REPUTATION */
+.banner6 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to left, rgba(80, 80, 80, 100%), rgba(80, 80, 80, 75%));
+}
+
+.banner6 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 45px;
+}
+
+.banner6 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner6 h1 {
+    margin-top: 40px;
+}
+
+.box .img5 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(177, 177, 177, 0.498);
+}
+
+.banner6 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER 1989 */
+.banner5 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to right, rgb(160, 192, 222), rgba(84, 151, 214, 0.177));
+}
+
+.banner5 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 40px;
+}
+
+.banner5 p {
+    /* width: 100%; */
+    margin-top: 25px;
+    margin-left: 10px;
+    
+}
+
+.banner5 h1 {
+    margin-top: 30px;
+}
+
+.box .img6 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(84, 151, 214, 0.719);
+}
+
+.banner5 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER RED */
+.banner4 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to left, rgba(190, 15, 24, 100%), rgba(190, 15, 24, 65%));
+}
+
+.banner4 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 40px;
+}
+
+.banner4 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner4 h1 {
+    margin-top: 35px;
+}
+
+.box .img7 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(116, 26, 31, 0.94);
+}
+
+.banner4 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER SPEAK NOW */
+.banner3 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to right, rgba(88, 40, 96, 68%), rgba(88, 40, 96, 33%));
+}
+
+.banner3 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 45px;
+}
+
+.banner3 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner3 h1 {
+    margin-top: 40px;
+}
+
+.box .img8 {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(87, 40, 96, 0.831);
+}
+
+.banner3 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER FEARLESS */
+.banner2 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to left, rgba(219, 181, 84, 0.952), rgba(230, 189, 86, 0.592));
+}
+
+.banner2 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 35px;
+}
+
+.banner2 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner2 h1 {
+    margin-top: 30px;
+}
+
+.box .img9 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(207, 171, 81);
+}
+
+.banner2 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER TAYLOR SWIFT */
+.banner1 {
+    border: solid 2px black;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 10px 0;
+    color: black;
+    background-image: linear-gradient(to right, rgba(86, 148, 139, 98%), rgba(86, 148, 139, 38%));
+}
+
+.banner1 .container {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    font-size: 45px;
+}
+
+.banner1 p {
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.banner1 h1 {
+    margin-top: 50px;
+}
+
+.box .img10 {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(86, 148, 139, 538%);
+}
+
+.banner1 .container .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+
+.footer {
+    border-top: solid 1px black;
+    margin-top: 10px;
+    background-color: rgba(148, 176, 197, 100%);
+    height: 200px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.footer h4{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+
+.footer img{
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+
+}
+

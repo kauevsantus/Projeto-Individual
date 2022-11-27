@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz | MSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="validarSessao()">
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">MySwiftSpace</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="indexLogin.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="albunsLogin.html">Álbuns</a>
+                </li>
+
+                <li>
+                    <a>Olá, <div id="b_usuario"></div></a>
+                </li>
+
+                <li>
+                    <a href="index.html">Sair</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="corpo">
+
+        <div class="topo">
+            <h1>Bem-Vindo(a) ao Quiz Swift</h1>
+            <h1>Descubra qual álbum tem o seu estilo!</h1>
+
+        </div>
+
+        <div id="fase0" class="container1" style="display: block;">
+            <div class="quadrado">
+                <div class="text">
+                    <button class="iniciar" onclick="iniciar()">Iniciar Quiz</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="fase1" class="container2" style="display: none;">
+            <div class="quadrado">
+                <div class="question">
+                    <h1>Pergunta 1</h1>
+                    <p>Qual gênero musical abaixo você mais gosta??</p>
+                    <input name="option" type="radio" id="opt1" value=1>
+                    <label for="opt_1">Country</label>
+                    <br>
+                    <input name="option" type="radio" id="opt2" value=2>
+                    <label for="opt_1">Pop</label>
+                    <br>
+                    <input name="option" type="radio" id="opt3" value=3>
+                    <label for="opt_1">Alternativa</label>
+                    <br>
+                    <input name="option" type="radio" id="opt4" value=4>
+                    <label for="opt_1">Rock</label>
+                    <br>
+
+                    <button class="answer" onclick="responder1()">Responder</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fase2" class="container3" style="display: none;">
+            <div class="quadrado">
+                <div class="question">
+                    <h1>Pergunta 2</h1>
+                    <p>Você gosta de dançar?</p>
+                    <input name="option" type="radio" id="opt1" value=1>
+                    <label for="opt_2">Adoro!!!</label>
+                    <br>
+                    <input name="option" type="radio" id="opt2" value=2>
+                    <label for="opt_2">Gosto</label>
+                    <br>
+                    <input name="option" type="radio" id="opt3" value=3>
+                    <label for="opt_2">Até vai...</label>
+                    <br>
+                    <input name="option" type="radio" id="opt4" value=4>
+                    <label for="opt_2">Nem um pouco</label>
+                    <br>
+
+                    <button class="answer" onclick="responder2()">Responder</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fase3" class="container4" style="display: none;">
+            <div class="quadrado">
+                <div class="question">
+                    <h1>Pergunta 3</h1>
+                    <p>Você gosta de ouvir música?</p>
+                    <input name="option" type="radio" id="opt1" value=1>
+                    <label for="opt_1">Meu passatempo favorito</label>
+                    <br>
+                    <input name="option" type="radio" id="opt2" value=2>
+                    <label for="opt_1">Gosto</label>
+                    <br>
+                    <input name="option" type="radio" id="opt3" value=3>
+                    <label for="opt_1">Bem pouco, mas ouço</label>
+                    <br>
+                    <input name="option" type="radio" id="opt4" value=4>
+                    <label for="opt_1">Não gosto</label>
+                    <br>
+
+                    <button class="answer" onclick="responder3()">Responder</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fase4" class="container5" style="display: none;">
+            <div class="quadrado">
+                <div class="question">
+                    <h1>Pergunta 4</h1>
+                    <p>Você age de acordo com a sua emoção?</p>
+                    <input name="option" type="radio" id="opt1" value=1>
+                    <label for="opt_1">Muito</label>
+                    <br>
+                    <input name="option" type="radio" id="opt2" value=2>
+                    <label for="opt_1">Sim</label>
+                    <br>
+                    <input name="option" type="radio" id="opt3" value=3>
+                    <label for="opt_1">Não</label>
+                    <br>
+                    <input name="option" type="radio" id="opt4" value=4>
+                    <label for="opt_1">Quase nunca</label>
+                    <br>
+
+                    <button class="answer" onclick="responder4()">Responder</button>
+                </div>
+
+            </div>
+        </div>
+
+         <div id="fase5" class="container6" style="display: none;">
+            <div class="quadrado">
+                <div class="question">
+                    <h1>Pergunta 5</h1>
+                    <p>Você age de acordo com a sua razão?</p>
+                    <input name="option" type="radio" id="opt1" value=1>
+                    <label for="opt_1">Muito</label>
+                    <br>
+                    <input name="option" type="radio" id="opt2" value=2>
+                    <label for="opt_1">Sim</label>
+                    <br>
+                    <input name="option" type="radio" id="opt3" value=3>
+                    <label for="opt_1">Não</label>
+                    <br>
+                    <input name="option" type="radio" id="opt4" value=4>
+                    <label for="opt_1">Quase nunca</label>
+                    <br>
+
+                    <button class="answer" onclick="responder5()">Responder</button>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <div id="fase11" class="container12" style="display: none;">
+            <div class="quadrado">
+                <div class="question2">
+                    <h1 >Parabéns</h1>
+                    <p>Aqui está a sua recomendação, espero que goste!</p>
+                    <div class="album">
+
+                    <div class="resposta" id="id_resposta">
+                        <img id="img_resultado" src="" alt="" width="250px">
+                        <span class="nomeAlbum" id="id_nome_album"></span>
+                        <span class="single" id="id_single"></span>
+                    </div> 
+
+                </div>
+                    <br>
+                    <button class="answer" onclick="mostrar()">Ir para os gráficos</button>
+                    <br>
+                    <button class="answer" onclick="voltar()">Voltar</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <h4>myswiftspace
+                <br>
+                <!-- <span class="version">
+                    v1.0.0
+                </span> -->
+            </h4>
+
+            <div class="redes">
+                <img src="assets/imgs/face.png" alt="">
+                <img src="assets/imgs/insta.png" alt="">
+                <img src="assets/imgs/gmail.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="quiz.js"></script>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
+</script>
+
+
+
+

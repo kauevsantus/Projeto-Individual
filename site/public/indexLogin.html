@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MSS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="validarSessao()">
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">MySwiftSpace</h1>
+            <ul class="navbar">
+                <li class="now">
+                    <a href="indexLogin.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="albunsLogin.html">Álbuns</a>
+                </li>
+
+                <li>
+                    <a>Olá, <div id="b_usuario"></div></a>
+                </li>
+
+                <li>
+                    <a href="login.html">Sair</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Banner -->
+
+    <div class="banner">
+        <div class="container">
+            <div class="boxes">
+                <div class="box">
+                    <h1>Midnights</h1>
+                    <p>Escute agora o novo álbum de Taylor Swift!</p>
+                </div>
+
+                <div class="box">
+                    <img src="assets/eramidnigths/capa midngths.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre a Taylor -->
+
+    <div class="telao">
+        <div class="container">
+            <div class="boxes">
+                <div class="box">
+                <h2>Taylor Alisson Swift</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ut corporis, ipsa est quidem porro fugiat sapiente eligendi quam itaque similique aut commodi aliquid amet. Ex accusamus asperiores eum repellat.</p>
+                <button class="btn" onclick="saibamais()">Saiba Mais</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="container">
+            <h4>myswiftspace 
+                <br>
+                <!-- <span class="version">
+                    v1.0.0
+                </span> -->
+            </h4>
+            
+            <div class="redes">
+                <img src="assets/imgs/face.png" alt="">
+                <img src="assets/imgs/insta.png" alt="">
+                <img src="assets/imgs/gmail.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function saibamais() {
+        window.location.href = "./sobre.html"
+    }
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
+</script>

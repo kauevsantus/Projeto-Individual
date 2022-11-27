@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | MSS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header3">
+        <div class="container">
+            <h1 class="titulo">MySwiftSpace</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="albuns.html">Álbuns</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li class="now">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Box Login -->
+
+    <div class="telalogin">
+        <div class="container">
+            <div class="caixas">
+                <div class="caixa">
+                    <img src="assets/imgs/era 1989.jfif" alt="">
+                </div>
+
+
+
+                <div class="caixa1">
+                    <h2>Olá, Bem-vindo(a) ao MySwiftSpace!</h2>
+
+                    <div class="formulario">
+                        <span class="tipo_campo">Nome:</span>
+                        <input id="nome_input" type="text" placeholder="Seu nome">
+
+                        <span class="tipo_campo">E-mail:</span>
+                        <input id="email_input" type="email" placeholder="nome@email.com">
+
+                        <span class="tipo_campo">Senha:</span>
+                        <input id="senha_input" type="password" placeholder="******">
+
+                        <span class="tipo_campo">Confirmar Senha:</span>
+                        <input id="confirmacao_senha_input" type="password" placeholder="******">
+
+                        <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer1">
+            <div class="container">
+                <h4>myswiftspace
+                    <br>
+
+                </h4>
+
+                <div class="redes">
+                    <img src="assets/imgs/face.png" alt="">
+                    <img src="assets/imgs/insta.png" alt="">
+                    <img src="assets/imgs/gmail.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var ax_erro = true
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+            
+            alert(`Por favor inserir dados nos campos abaixo.`)
+            ax_erro = false
+            return false;
+        }
+
+        if (senhaVar != confirmacaoSenhaVar) {
+
+            alert(`As senhas inseridas não coincidem.`)
+            ax_erro = false
+            return false;
+        }
+
+        if (ax_erro) {
+            // Enviando o valor da nova input
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                    nomeServer: nomeVar,
+                    emailServer: emailVar,
+                    senhaServer: senhaVar
+                })
+            }).then(function (resposta) {
+
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    // cardErro.style.display = "block";
+
+                    alert(`Cadastro feito com sucesso!`)
+
+                    setTimeout(() => {
+                        window.location.href = "login.html";
+                    }, "2000")
+
+                    // limparFormulario();
+                    // finalizarAguardar();
+                } else {
+                    throw ("Houve um erro ao tentar realizar o cadastro!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                // finalizarAguardar();
+            });
+
+            return false;
+        }
+
+        // function sumirMensagem() {
+        //     cardErro.style.display = "none"
+        // }
+    }
+
+
+</script>
