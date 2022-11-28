@@ -13,8 +13,8 @@ O MySwiftSpace é um projeto para divulgar os álbuns da Taylor Swift para que o
 </div>
 
 ### Kauê Vitor Santos  
-    São Paulo Tech School - SPTECH 
-    Analise e Desenvolvimento de Sistemas
+São Paulo Tech School - SPTECH <br>
+Analise e Desenvolvimento de Sistemas
 
 ##
 
