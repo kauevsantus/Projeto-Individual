@@ -20,7 +20,7 @@ function iniciar() {
                     fase0.style.display = "none"
 
                 } else {
-                    alert('Você já recebeu o seu resultado')
+                    alert('Você já recebeu o seu resultado, confira!!!')
                     fase0.style.display = "none"
                     fase11.style.display = "block"
                     resultado()

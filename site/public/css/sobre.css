@@ -7,16 +7,32 @@
 
 .caixas1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .box1 {
-    width: 500px;
-    height: 600px;
+    width: 1250px;
+    height: 900px;
     border-radius: 20px;
     background-color: rgba(148, 159, 197, 82%);
     padding: 50px 20px 10px 30px;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box13 {
+  width: 1250px;
+  height: auto;
+  border-radius: 20px;
+  background-color: rgba(148, 159, 197, 82%);
+  padding: 50px 20px 10px 30px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
 
 
@@ -70,7 +86,7 @@
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  
 }
 
 /* Number text (1/3 etc) */
@@ -111,5 +127,46 @@
 
 img{
   border-radius: 15px;
+}
+
+.box1 p{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.box1 h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box13 span{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.box13 p{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.box13 h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+summary {
+  outline: none;
+  cursor: pointer;
+}
+
+details {
+  color: var(--white-color);
+  font-size: 23px;
 }
 
