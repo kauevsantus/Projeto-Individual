@@ -88,3 +88,15 @@ select u.idUsuario , q.qtdPontos, a.foto, a.nomeAlbum, m.nome from Usuario as u
 			join Musicas as m on m.fkAlbum = idAlbum where idUsuario = 3;
 
 
+
+-- teste select para validação API
+select fkAlbum from quiz where fkUsuario = 1
+
+
+--teste select para mostrar dados no grafico 
+select fkAlbum, count(fkAlbum) as Album from quiz group by fkAlbum;
+
+
+
+
+
