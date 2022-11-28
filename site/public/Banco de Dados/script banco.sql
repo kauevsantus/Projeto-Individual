@@ -86,3 +86,5 @@ select u.idUsuario , q.qtdPontos, a.foto, a.nomeAlbum, m.nome from Usuario as u
 	join Quiz as q on fkUsuario = idUsuario
 		join Album as a on fkAlbum = idAlbum
 			join Musicas as m on m.fkAlbum = idAlbum where idUsuario = 3;
+
+

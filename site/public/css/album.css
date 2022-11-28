@@ -50,8 +50,9 @@
     display: flex;
 }
 
-.header #b_usuario{
+.header #b_usuario {
     margin-left: 10px;
+    border-radius: 35px;
 }
 
 .now {
@@ -66,7 +67,7 @@
     background-image: url("../assets/imgs/desenhodaseras2.jpg");
     background-size: cover;
     height: 530px;
-    
+
 }
 
 .texto {
@@ -79,6 +80,88 @@
 
 }
 
+.box .btn_capa {
+    cursor: pointer;
+    margin-top: 140px;
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgba(0, 32, 100, 0);
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.box .btn_capa1 {
+    cursor: pointer;
+    margin-top: 150px;
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgba(0, 32, 100, 0);
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.box .btn_capa2 {
+    cursor: pointer;
+    margin-top: 140px;
+    font-family: "Barlow", sans-serif;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0);
+    font-weight: 800;
+    font-size: 25px;
+
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    width: 300px;
+    align-items: center;
+
+    display: flex;
+    justify-content: right;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.box .btn_capa3 {
+    cursor: pointer;
+    margin-top: 140px;
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgba(0, 32, 100, 0);
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+
 /* BANNER MIDNIGHTS */
 .banner11 {
     border: solid 2px black;
@@ -86,7 +169,7 @@
     height: fit-content;
     padding: 10px 0;
     color: black;
-    background-image: linear-gradient(to right, rgba(00, 59, 147, 25%),rgba(85, 98, 139, 100%) );
+    background-image: linear-gradient(to right, rgba(00, 59, 147, 25%), rgba(85, 98, 139, 100%));
 }
 
 .banner11 .container {
@@ -100,7 +183,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner11 h1 {
@@ -108,7 +191,7 @@
 }
 
 .box img {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     width: 300px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(00, 59, 147, 40%);
@@ -140,7 +223,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner9 h1 {
@@ -181,7 +264,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner8 h1 {
@@ -221,12 +304,12 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner7 h1 {
     margin-top: 50px;
-    
+
 }
 
 .box .img4 {
@@ -260,9 +343,9 @@
 
 .banner6 p {
     /* width: 100%; */
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
-    
+
 }
 
 .banner6 h1 {
@@ -302,7 +385,7 @@
     /* width: 100%; */
     margin-top: 25px;
     margin-left: 10px;
-    
+
 }
 
 .banner5 h1 {
@@ -342,7 +425,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner4 h1 {
@@ -382,7 +465,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner3 h1 {
@@ -422,7 +505,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner2 h1 {
@@ -462,7 +545,7 @@
     /* width: 100%; */
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 .banner1 h1 {
@@ -496,7 +579,8 @@
 
 }
 
-.footer h4{
+
+.footer h4 {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -507,11 +591,10 @@
 
 
 
-.footer img{
+.footer img {
     width: 50px;
     margin-left: 40px;
     margin-top: 20px;
 
 
 }
-

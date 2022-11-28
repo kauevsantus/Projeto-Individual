@@ -55,6 +55,24 @@ function resultado(idUsuario) {
     return database.executar(instrucao);
 }
 
+function mostrar() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function resultado()", );
+    var instrucao = `
+    select fkAlbum, count(fkAlbum) as Album from quiz group by fkAlbum;
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function validar(idUsuario) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function resultado()", );
+    var instrucao = `
+    select fkAlbum from quiz where fkUsuario = ${idUsuario};
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 
 
 module.exports = {
@@ -62,5 +80,7 @@ module.exports = {
     cadastrar,
     listar,
     inserir,
-    resultado
+    resultado,
+    mostrar,
+    validar
 };

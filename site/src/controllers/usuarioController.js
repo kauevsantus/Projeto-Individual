@@ -139,11 +139,47 @@ function resultado(req, res) {
     });
 }
 
+function mostrar(req, res) {
+
+
+    usuarioModel.mostrar().then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
+function validar(req, res) {
+
+    var idUsuario = req.params.idUsuario;
+    
+    usuarioModel.validar(idUsuario).then(function (resultado) {
+        // Aqui eu quero trazer o resultado do vetor com os registros do banco se a fkAlbum estara com valor ou sem valor
+        if (resultado.length > 0 || resultado.length == 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
     testar,
     inserir,
-    resultado
+    resultado,
+    mostrar,
+    validar
 }

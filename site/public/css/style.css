@@ -171,6 +171,11 @@
     background-image: linear-gradient(to top, rgba(00, 59, 147, 28%), white);
 }
 
+.box .btn_mid{
+    cursor: pointer;
+    margin-top: 140px;
+}
+
 .banner .container {
     width: 80%;
     margin: auto;

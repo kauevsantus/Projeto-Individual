@@ -28,6 +28,10 @@
                     <a href="albunsLogin.html">Álbuns</a>
                 </li>
 
+                <li class="now">
+                    <a href="quiz.html">Quiz</a>
+                </li>
+
                 <li>
                     <a>Olá, <div id="b_usuario"></div></a>
                 </li>
@@ -194,9 +198,9 @@
 
                 </div>
                     <br>
-                    <button class="answer" onclick="mostrar()">Ir para os gráficos</button>
+                    <button class="answer3" onclick="aparecer()">Gráfico de Popularidade</button>
                     <br>
-                    <button class="answer" onclick="voltar()">Voltar</button>
+                    <button class="answer2" onclick="voltar()">Voltar</button>
                 </div>
 
             </div>
@@ -228,6 +232,7 @@
 </html>
 
 <script src="quiz.js"></script>
+
 <script>
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO
 </script>
