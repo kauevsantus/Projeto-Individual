@@ -2,4 +2,4 @@
 
 Projeto Individual Taylor Swift 
 
-<img src="../site/public/assets/imgs/desenhodaseras2.jpg" width="600px">
+<img src="desenhodaseras2.jpg" width="600px">
