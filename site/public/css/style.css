@@ -197,6 +197,12 @@
     width: 300px;
 }
 
+.box h2 {
+    text-align: center;
+}
+
+
+
 .banner .container .boxes {
     display: flex;
     justify-content: space-evenly;
@@ -294,3 +300,4 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(00, 59, 147, 50%);
 }
+

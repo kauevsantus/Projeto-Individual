@@ -301,6 +301,16 @@
     color: black;
 }
 
+.answer2:hover {
+    background-color: white;
+    color: black;
+}
+
+.answer3:hover {
+    background-color: white;
+    color: black;
+}
+
 .grafico {
     margin-top: 30px;
     width: 800px;
