@@ -85,15 +85,15 @@ insert into Musicas values
 select u.idUsuario , q.qtdPontos, a.foto, a.nomeAlbum, m.nome from Usuario as u 
 	join Quiz as q on fkUsuario = idUsuario
 		join Album as a on fkAlbum = idAlbum
-			join Musicas as m on m.fkAlbum = idAlbum where idUsuario = 3;
+			join Musicas as m on m.fkAlbum = idAlbum where idUsuario = 7;
 
 
 
 -- teste select para validação API
-select fkAlbum from quiz where fkUsuario = 1
+select fkAlbum from quiz where fkUsuario = 1;
 
 
---teste select para mostrar dados no grafico 
+-- teste select para mostrar dados no grafico 
 select fkAlbum, count(fkAlbum) as Album from quiz group by fkAlbum;
 
 
